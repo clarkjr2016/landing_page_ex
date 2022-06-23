@@ -127,4 +127,23 @@ a {
 
 .square-container {
     display: flex;
+    padding: 30px 8em;
+    gap: 2em;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
+.empty-square {
+    border: 5px solid #3882f6;
+    flex: 1 1 3em;
+    border-radius: 5px;
+
+}
+
+.non-sense {
+    font-size: .25em;
 }
