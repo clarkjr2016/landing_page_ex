@@ -41,8 +41,6 @@ ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
-   
-
     
 }
 
@@ -120,7 +118,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px 0px;
     font-size: 36px;
     font-weight: bold;
 }
@@ -135,15 +133,42 @@ a {
     display: flex;
     flex-direction: column;
     gap: .25em;
+    align-items: center;
+    
 }
 
 .empty-square {
     border: 5px solid #3882f6;
     flex: 1 1 3em;
     border-radius: 5px;
+    min-width: 3em;
+    max-width: 3em;
 
 }
 
 .non-sense {
     font-size: .25em;
+    text-align: center;
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    font-size: 36px;
+    background-color: #e5e7eb;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 8em;
+}
+
+.content-2 p {
+ font-size: 36px;
+ font-weight: lighter;
+ font-style: italic;
 }
