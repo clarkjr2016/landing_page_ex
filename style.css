@@ -172,3 +172,48 @@ a {
  font-weight: lighter;
  font-style: italic;
 }
+
+.quote-author {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.quote-author p {
+    font-size: 18px; 
+    padding-right: 3em; 
+    font-weight: bold;
+}
+
+.content-3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-container {
+    background-color: #3882f6;
+    padding: 2em 4em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 50em;
+}
+
+.call-to-action-text-container {
+    color: white;
+    font-size: .75em;
+}
+
+.text-1 {
+    font-weight: bold;
+}
+
+.call-to-action-container button {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: white;
+    padding: .5em 2em;
+    border-radius: 10px;
+}
