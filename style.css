@@ -20,7 +20,7 @@ header {
 .header-container {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  min-width: 100vw;
   padding: 10px 0;
 }
 
@@ -34,7 +34,6 @@ header {
 .header-logo {
   font-size: 1rem;
   color: #f9faf8;
-  max-width: 100%;
 }
 
 ul {
@@ -224,4 +223,14 @@ footer {
 
 footer p {
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  ul {
+    display: none;
+  }
 }
