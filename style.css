@@ -26,7 +26,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   max-width: 100%;
 }
@@ -45,6 +45,29 @@ ul {
 
 li {
   margin: 0 15px;
+  display: block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+li:hover {
+  background-color: #555;
 }
 
 a {
@@ -61,7 +84,6 @@ a {
 .hero-container {
   display: flex;
   justify-content: space-between;
-
   flex: 0 1 50%;
   min-height: 15em;
   overflow: hidden;
@@ -228,9 +250,25 @@ footer p {
 @media only screen and (max-width: 768px) {
   .navbar {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   ul {
     display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  ul li {
+    text-align: center;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  ul.active {
+    display: flex;
   }
 }
