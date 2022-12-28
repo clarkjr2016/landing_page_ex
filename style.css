@@ -11,6 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Manrope";
+  overflow-x: hidden;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%;
 }
@@ -76,9 +77,14 @@ a {
   font-size: 1rem;
 }
 
+#pic {
+  max-width: 30%;
+  object-fit: cover;
+}
+
 .filler {
   background-color: #1f2937;
-  min-height: 3em;
+  min-height: 3rem;
 }
 
 .hero-container {
@@ -101,14 +107,15 @@ a {
 }
 
 .main-text {
-  font-size: 48px;
+  font-size: 5vw;
   font-weight: bold;
   color: #f9faf8;
 }
 
 .main-p-text {
-  font-size: 30px;
+  font-size: 3.5vw;
   color: #e5e7eb;
+  margin-bottom: 15px;
 }
 
 .button {
@@ -124,8 +131,6 @@ a {
   flex: 0 1 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: darkgray;
 }
 
 .hero-pic-placeholder p {
@@ -270,5 +275,15 @@ footer p {
 
   ul.active {
     display: flex;
+  }
+
+  .main-p-text {
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
