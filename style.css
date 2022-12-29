@@ -80,6 +80,7 @@ a {
 #pic {
   max-width: 30%;
   object-fit: cover;
+  border-radius: 5rem;
 }
 
 .filler {
@@ -163,8 +164,13 @@ a {
   border: 5px solid #3882f6;
   flex: 1 1 3em;
   border-radius: 5px;
-  min-width: 3em;
-  max-width: 3em;
+  min-width: 15em;
+  height: auto;
+}
+
+#grid-pic {
+  max-width: 100%;
+  height: auto;
 }
 
 .non-sense {
