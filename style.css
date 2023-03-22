@@ -150,6 +150,7 @@ a {
   margin: 50px 0px;
   font-size: 0.25vw;
   font-weight: bold;
+  min-width: 100vw;
 }
 
 .random-information {
@@ -175,13 +176,14 @@ a {
   border: 5px solid #3882f6;
   flex: 1 1 3em;
   border-radius: 5px;
-  min-width: 15em;
+  min-width: 10vw;
   height: auto;
 }
 
 #grid-pic {
-  max-width: 100%;
+  min-width: 75%;
   height: auto;
+  object-fit: cover;
 }
 
 .non-sense {
@@ -202,11 +204,15 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 50px 8em;
-  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.customer-quote {
+  max-width: 100%;
 }
 
 .content-2 p {
-  font-size: 36px;
+  font-size: 1vw;
   font-weight: lighter;
   font-style: italic;
 }
@@ -214,11 +220,11 @@ a {
 .quote-author {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .quote-author p {
-  font-size: 18px;
+  font-size: 0.75vw;
   padding-right: 3em;
   font-weight: bold;
 }
@@ -227,7 +233,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .call-to-action-container {
@@ -235,13 +242,13 @@ a {
   padding: 2em 4em;
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
-  width: 50em;
+  justify-content: space-evenly;
+  width: 50vw;
 }
 
 .call-to-action-text-container {
   color: white;
-  font-size: 0.75em;
+  font-size: 1vw;
 }
 
 .text-1 {
@@ -254,6 +261,7 @@ a {
   color: white;
   padding: 0.5em 2em;
   border-radius: 10px;
+  font-size: 1vw;
 }
 
 footer {
@@ -267,6 +275,7 @@ footer {
 
 footer p {
   color: white;
+  font-size: 1vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -303,5 +312,10 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .square-container {
+    display: flex;
+    flex-direction: column;
   }
 }
